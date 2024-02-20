@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  background-color: rgb(126, 8, 116);
+  padding: 20px 0px;
+
+  .update_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 70px;
+    input {
+      font-size: 18px;
+      padding: 15px 5px 15px 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 12px;
+      border: none;
+    }
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    h2 {
+      input {
+        margin-right: 10px;
+      }
+    }
+    img {
+      max-width: 160px;
+      border-radius: 12px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 12px;
+      margin: 10px;
+      border: none;
+      &:hover {
+        background-color: rgba(148, 211, 0, 0.808);
+      }
+      &:hover:first-child {
+        background-color: rgba(201, 9, 9, 0.808);
+      }
+    }
+    input {
+      accent-color: rgb(9, 226, 20);
+    }
+  }
+  &:hover {
+    border-radius: 20px;
+    transition: 1s;
+  }
+}
+
+.line {
+  text-decoration: line-through;
+}
+.noline {
+  text-decoration: none;
+}
